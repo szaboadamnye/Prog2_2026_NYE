@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        int kor;
+        do {
+            System.out.print("Hány éves vagy? (1-20 között): ");
+            kor = Integer.parseInt(input.nextLine());
+
+            if (kor < 1  kor > 20) {
+                System.out.println("Az intervallumon kívül érték esetén ismételje a bekérést!");
+            }
+        } while (kor < 1  kor > 20);
+
+        // csillagok
+        for (int i = 0; i < kor; i++) {
+            System.out.print("*");
+        }
+        System.out.println();
+
+        // szívek
+        char sziv = '\u2665';
+        for (int i = 0; i < kor; i++) {
+            System.out.print(sziv);
+        }
+        System.out.println();
+    }
+}
