@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Most 100 van, villámlik.");
+        System.out.print("A villámlás után hány másodperccel hallottad a dörgést? ");
+        double masodperc = Double.parseDouble(input.nextLine());
+
+        double tavolsagMeter = masodperc * 330.0;
+        System.out.println("A villám kb. " + tavolsagMeter + " méterre volt tőled.");
+    }
+}
